@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECRET SPACE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="browser">
+
+    <div class="browser-top">
+        <div class="dots">
+            <span></span><span></span><span></span>
+        </div>
+        <div class="address">✧ secret-space.myworld ✧</div>
+    </div>
+
+    <header>
+        <div class="logo">Secret Space<span>.</span></div>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#spaces">MY SPACES</a>
+            <a href="#about">ABOUT</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <p class="small-heading">A LITTLE WORLD OF MY OWN</p>
+
+        <h1>Welcome to my<br><i>Secret Space.</i></h1>
+
+        <p class="description">
+            A little place for all the memories, thoughts,
+            feelings and dreams that make me who I am.
+        </p>
+
+        <div class="star">✣</div>
+
+        <p class="quote" id="quote">
+            "You deserve all the little happiness life has to offer."
+        </p>
+    </section>
+
+    <section class="spaces" id="spaces">
+
+        <div class="section-title">
+            <h2>My Little Corners</h2>
+            <p>Choose a folder and enter your own little world.</p>
+        </div>
+
+        <div class="folder-container" id="folderContainer"></div>
+
+    </section>
+
+    <section class="about" id="about">
+        <span>✧</span>
+        <p>
+            This is my space. My memories. My feelings.
+            My little universe. No explanations needed.
+        </p>
+        <span>✧</span>
+    </section>
+
+    <footer>
+        Made with little thoughts and lots of love ♡
+    </footer>
+
+</div>
+
+<!-- INDIVIDUAL JOURNAL PAGE -->
+
+<div class="journal-overlay" id="journalOverlay">
+
+    <div class="journal-page">
+
+        <div class="journal-header">
+            <button onclick="goBack()">← BACK</button>
+            <span>✧ SECRET SPACE ✧</span>
+        </div>
+
+        <div class="journal-content">
+
+            <p class="small-heading">YOUR PRIVATE CORNER</p>
+
+            <h2 id="journalTitle">My Journal</h2>
+
+            <p id="journalDescription" class="journal-description"></p>
+
+            <div class="journal-box">
+
+                <label>Give this moment a title</label>
+                <input
+                    type="text"
+                    id="entryTitle"
+                    placeholder="A little title..."
+                >
+
+                <label>Your thoughts belong here...</label>
+                <textarea
+                    id="entryText"
+                    placeholder="Write whatever is on your mind..."
+                ></textarea>
+
+                <div class="save-row">
+                    <p id="saveMessage">Your little memories matter ♡</p>
+                    <button onclick="saveEntry()">SAVE ENTRY ✧</button>
+                </div>
+
+            </div>
+
+            <div class="kind-quote" id="kindQuote">
+                Remember, you are doing better than you think.
+            </div>
+
+            <div class="saved-entries" id="savedEntries"></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
